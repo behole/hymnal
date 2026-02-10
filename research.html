@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HYMNAL STUDIO - Emergent Design Research Database</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        a { color: #20c; }
+        a:visited { color: #551a8b; }
+        a:hover { color: #ff69b4; }
+
+        .wrapper {
+            width: 920px;
+            margin: 0 auto;
+            background: #fff;
+            border: 1px solid #ccc;
+        }
+        .header {
+            background: linear-gradient(to bottom, #006699, #004466);
+            color: white;
+            padding: 15px 20px;
+            border-bottom: 3px solid #98bf21;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+        .header p {
+            margin: 5px 0 0 0;
+            font-size: 12px;
+            color: #99ccff;
+        }
+        .marquee-bar {
+            background: #98bf21;
+            padding: 5px 0;
+            border-bottom: 1px solid #7a9f1a;
+        }
+        .marquee-bar marquee {
+            color: #000;
+            font-weight: bold;
+            font-size: 13px;
+        }
+        .main {
+            display: table;
+            width: 100%;
+        }
+        .sidebar {
+            display: table-cell;
+            width: 180px;
+            background: #e8f4e8;
+            border-right: 1px solid #98bf21;
+            vertical-align: top;
+            padding: 15px;
+        }
+        .sidebar h3 {
+            color: #006699;
+            font-size: 14px;
+            margin: 0 0 10px 0;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #98bf21;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+        }
+        .sidebar li {
+            margin: 5px 0;
+        }
+        .sidebar a {
+            display: block;
+            background: #98bf21;
+            color: #000;
+            padding: 8px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        .sidebar a:hover {
+            background: #7a9f1a;
+            color: #fff;
+        }
+        .content {
+            display: table-cell;
+            vertical-align: top;
+            padding: 20px;
+        }
+        .content h2 {
+            color: #006699;
+            font-size: 22px;
+            margin: 0 0 15px 0;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #2eccfa;
+        }
+        .content h3 {
+            color: #006699;
+            font-size: 16px;
+            margin: 20px 0 10px 0;
+        }
+        .info-box {
+            background: #e6f7ff;
+            border: 3px solid #2eccfa;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .info-box h4 {
+            color: #006699;
+            margin: 0 0 10px 0;
+            font-size: 14px;
+        }
+        .highlight-box {
+            background: #f0ffe0;
+            border: 3px solid #98bf21;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .project-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        .project-table th {
+            background: #006699;
+            color: white;
+            padding: 10px;
+            text-align: left;
+            font-size: 13px;
+        }
+        .project-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            vertical-align: top;
+        }
+        .project-table tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        .project-table img {
+            border: 2px solid #98bf21;
+            border-radius: 4px;
+        }
+        .nav-top {
+            background: #006699;
+            padding: 8px 20px;
+            border-bottom: 1px solid #004466;
+        }
+        .nav-top a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .nav-top a:hover {
+            color: #98bf21;
+        }
+        .footer {
+            background: #333;
+            color: #999;
+            padding: 15px 20px;
+            font-size: 11px;
+            text-align: center;
+        }
+        .footer a { color: #98bf21; }
+        .update-notice {
+            background: #ffffcc;
+            border: 1px solid #e6e600;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 12px;
+        }
+        .citation {
+            font-style: italic;
+            background: #f9f9f9;
+            padding: 10px;
+            border-left: 4px solid #006699;
+            margin: 10px 0;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>HYMNAL STUDIO</h1>
+        <p>Emergent Experimental Design Research Database | Est. 2024 | Principal Investigator: Jon Pastir</p>
+    </div>
+
+    <!-- TOP NAV -->
+    <div class="nav-top">
+        <a href="#theory">THEORY</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#methodology">METHODOLOGY</a>
+        <a href="#publications">PUBLICATIONS</a>
+        <a href="#contact">CONTACT</a>
+        <a href="index.html">GEOCITIES VERSION</a>
+        <a href="timecube.html">MANIFESTO VERSION</a>
+    </div>
+
+    <!-- MARQUEE -->
+    <div class="marquee-bar">
+        <marquee>*** NEW RESEARCH: Cubic Light Theory validated through Drag Chain Lamp experiments *** ARK CONSTRUCTION ongoing *** Accepting inquiries from Emergent Thinkers *** SINGULARITY DESIGN proven inferior in controlled studies ***</marquee>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#theory">Theory</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <h3>Project Index</h3>
+            <ul>
+                <li><a href="#hypercoral">Hypercoral</a></li>
+                <li><a href="#dragchain">Drag Chain Lamp</a></li>
+                <li><a href="#lily">Lily of the F1</a></li>
+                <li><a href="#handle">Handle With Care</a></li>
+                <li><a href="#sconce1">Angle Sconce 1</a></li>
+                <li><a href="#sconce2">Angle Sconce 2</a></li>
+            </ul>
+
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="https://www.hymnalstudio.com">Official Site</a></li>
+                <li><a href="http://instagram.com/JONPASTIR">Instagram</a></li>
+                <li><a href="mailto:jonathanpastir@gmail.com">Email</a></li>
+            </ul>
+
+            <div class="update-notice">
+                <b>Last Updated:</b><br>
+                February 10, 2026
+            </div>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="content">
+
+            <h2 id="overview">Welcome to the Hymnal Studio Research Database</h2>
+
+            <div class="info-box">
+                <h4>Mission Statement</h4>
+                <p><b>WE BUILD AN ARK.</b> Hymnal Studio is dedicated to the research and development of Emergent Experimental Design principles. Our work challenges the dominant Singularity Design paradigm and proposes alternative frameworks for object creation.</p>
+            </div>
+
+            <p>This database contains documentation of ongoing research projects, theoretical frameworks, and empirical findings in the field of Emergent Design. All work is conducted under the supervision of <b>Jon Pastir (Explorer 1)</b>, Principal Investigator.</p>
+
+            <div class="highlight-box">
+                <h4>Key Research Areas</h4>
+                <ul>
+                    <li><b>Cubic Growth Principles</b> - Multi-directional form development</li>
+                    <li><b>Nature-Machine Unity Theory</b> - Biological/mechanical system equivalence</li>
+                    <li><b>4-Corner Light Dynamics</b> - Emission, transmission, reflection, absorption states</li>
+                    <li><b>Oppositional Pairing</b> - Design objects as cubic complements</li>
+                </ul>
+            </div>
+
+            <h2 id="theory">Theoretical Framework</h2>
+
+            <h3>Emergent Experimental Design (EED)</h3>
+            <p>Emergent Experimental Design represents a fundamental departure from conventional design methodology. Where traditional approaches begin with a singular concept and develop linearly (Singularity Design), EED allows form to arise from multiple simultaneous inputs.</p>
+
+            <div class="citation">
+                "The Ark has four corners. The Ark contains all opposites. The Ark is emergent. The Ark is experimental. We build an Ark."
+                <br>— J. Pastir, <i>Foundations of Emergent Design</i>, 2024
+            </div>
+
+            <h3>Critique of Singularity Design</h3>
+            <p>Singularity Design (SD) dominates contemporary design education and practice. SD is characterized by:</p>
+            <ul>
+                <li>Single-perspective development</li>
+                <li>Linear iteration processes</li>
+                <li>Reductive form simplification</li>
+                <li>Planned obsolescence accommodation</li>
+            </ul>
+            <p>Research conducted at Hymnal Studio suggests that SD produces objects with reduced longevity, limited user resonance, and diminished aesthetic complexity compared to EED-produced objects.</p>
+
+            <h2 id="projects">Research Projects</h2>
+
+            <table class="project-table">
+                <tr>
+                    <th width="150">Project</th>
+                    <th width="120">Image</th>
+                    <th>Description</th>
+                    <th width="120">Status</th>
+                </tr>
+                <tr id="hypercoral">
+                    <td><b>HYPERCORAL</b></td>
+                    <td><img src="images/hypercoral.jpg" width="100"></td>
+                    <td>Investigation of 4-corner growth principles through coral-inspired form development. Demonstrates multi-directional emergence patterns. Each branch contains 4 sub-branches; each sub-branch contains 4 nodes. Mathematical structure: 4×4×4 cubic expansion.</td>
+                    <td><span style="color: green;">● Active</span></td>
+                </tr>
+                <tr id="dragchain">
+                    <td><b>DRAG CHAIN LAMP</b></td>
+                    <td><img src="images/drag-chain.jpg" width="100"></td>
+                    <td>Empirical test of Cubic Light Theory. Lamp design honors all 4 light states (emission, transmission, reflection, absorption) through chain-mediated shadow rotation. Produces "living light" vs. conventional "dead light" output.</td>
+                    <td><span style="color: green;">● Active</span></td>
+                </tr>
+                <tr id="lily">
+                    <td><b>LILY OF THE F1</b></td>
+                    <td><img src="images/lily-f1.jpg" width="100"></td>
+                    <td>Proof-of-concept for Nature-Machine Unity Theory. Demonstrates equivalence between biological growth cycles (seed→sprout→bloom→decay) and mechanical cycles (intake→compression→combustion→exhaust). 4-phase systems unified.</td>
+                    <td><span style="color: green;">● Active</span></td>
+                </tr>
+                <tr id="handle">
+                    <td><b>HANDLE WITH CARE</b></td>
+                    <td><img src="images/handle-with-care.jpg" width="100"></td>
+                    <td>Study of perceived vs. actual fragility in Emergent objects. Appears delicate but contains 4-corner structural integrity. Objects exist in 4 simultaneous hardness states. Ironic commentary on Singularity fragility labeling.</td>
+                    <td><span style="color: blue;">● Documentation</span></td>
+                </tr>
+                <tr id="sconce1">
+                    <td><b>ANGLE SCONCE 1</b></td>
+                    <td><img src="images/angle-sconce-1.jpg" width="100"></td>
+                    <td>First component of Oppositional Pairing study. An angle requires its opposite for meaning. Sconce 1 incomplete without Sconce 2. Challenges "product line" and "versioning" conventions of Singularity commercial practice.</td>
+                    <td><span style="color: orange;">● Paired</span></td>
+                </tr>
+                <tr id="sconce2">
+                    <td><b>ANGLE SCONCE 2</b></td>
+                    <td><img src="images/angle-sconce-2.jpg" width="100"></td>
+                    <td>Second component of Oppositional Pairing study. Cubic complement to Angle Sconce 1. Together they form Angular Truth. Neither can exist independently without representing a lie. Demonstrates necessity of opposite-honoring design.</td>
+                    <td><span style="color: orange;">● Paired</span></td>
+                </tr>
+            </table>
+
+            <h2 id="methodology">Methodology</h2>
+
+            <div class="info-box">
+                <h4>4-Corner Meditation Protocol</h4>
+                <p>Primary research method involves 4-day meditation sessions with 4 materials in 4 positions under 4 light sources. Protocol developed by J. Pastir following initial revelation experience. Results in emergent form concepts arising from multi-input synthesis rather than singular ideation.</p>
+            </div>
+
+            <h3>Experimental Controls</h3>
+            <p>All Hymnal research maintains strict separation from Singularity Design influences:</p>
+            <ul>
+                <li>No design school trained assistants</li>
+                <li>No industry-standard software</li>
+                <li>No trend-based material selection</li>
+                <li>No market-driven form decisions</li>
+            </ul>
+
+            <h2 id="contact">Contact &amp; Collaboration</h2>
+
+            <div class="highlight-box">
+                <h4>Research Inquiries</h4>
+                <p><b>Email:</b> <a href="mailto:jonathanpastir@gmail.com">jonathanpastir@gmail.com</a></p>
+                <p><b>Instagram:</b> <a href="http://instagram.com/JONPASTIR">@JONPASTIR</a></p>
+                <p>Hymnal Studio welcomes inquiries from Emergent Thinkers. Singularity-trained designers seeking deprogramming may also apply. Established academics should note that institutional affiliation does not preclude participation but may require additional orientation.</p>
+            </div>
+
+            <div class="citation">
+                "I respond to all Cubic Thinkers. Singularity Thinkers will be educated or ignored."
+                <br>— J. Pastir
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>© 2026 Hymnal Studio Research Database | Jon Pastir, Principal Investigator</p>
+        <p>This site contains 4-Corner Truth | <a href="index.html">Colorful Version</a> | <a href="timecube.html">Manifesto Version</a> | <a href="https://www.hymnalstudio.com">Original Site</a></p>
+        <p>Best viewed with any browser that honors Emergent principles</p>
+    </div>
+
+</div>
+
+</body>
+</html>
